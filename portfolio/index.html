@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO</title>
+  <!--共通reset.css-->
+  <link rel="stylesheet" href="styles/reset.css"/>
+  <!--ファビコン共通-->
+  <link rel="icon" href="images/fabikon.png" type="image/png+xml">
+  <!-- Google Font-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+ <!--<div class="loading" id="loading">
+            <div class="loading_logo"><img src="images/taiwanLogo.svg" alt="">
+        </div>-->
+        <div id="wrapper">
+             <header>
+                <h1 class="pc_h1"><img src="images/himawari.jpg" alt=""></h1>
+                <nav class="pc_nav">
+                    <ul>
+                        <li><a href="#">HOME</a></li>   <!--後ほど修正-->
+                        <li><a href="../PORTFOLIO_PORTFOLIO/index.html">Profile</a></li>
+                        <li><a href="../Work History/index.html">Work History</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="hero">
+        <div class="hamburger" id="open_nav">
+          <nav class="hamburgerMenu smartView">
+        <input class="menuBtn" type="checkbox" id="menuBtn">
+        <label class="menuIcon" for="menuBtn">
+          <span class="naviCon"></span>
+        </label>
+           <img src="images/hamburger.svg" alt="">
+        </div>
+           <img src="images/daiti.jpg"class="hero_bg-image">  
+        <div class="hero_copy">
+           制作物や興味がある内容をまとめました。<br>
+           各ページをクリックすることでサイトに飛ぶことができます。<br>
+           SNS関連のフォローもよろしくお願いします。<br>
+        </div>         
+    </div>
+    <main>
+    <!--PORTFOLIO -->
+    <section id="attraction">
+      <div class="h2shA">
+        <ul class="h2Ahs">
+          <li class="h2Area"><a href="../PORTFOLIO_PORTFOLIO/index.html"><h2>Profile</h2><img src="images/kashimiru-zhou-into.jpg" alt=""></a></li>
+          <li class="h2house"><a href="../Work History/index.html"><h2>Work History</h2><img src="images/watasi.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="formSec" id="formArea">
+     <div class="innerWrap">
+        <div class="sectionTitle notoSerifJp">
+            <p class="formSubTitle">お問い合わせ</p>
+        </div>
+          <div class="formDocument">
+            <form action="" method="">
+              <p>
+                <span class="alignment">
+                  <span class="formItem">お問い合わせ種別</span>
+                  <span class="essential">必須</span>
+                </span>
+                <span class="radioTextAlign">
+                  <label>
+                    <input type="radio" name="requestType" value="資料請求" required>
+                    <span class="radioText">資料請求</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="requestType" value="ご相談">
+                    <span class="radioText">ご相談</span>
+                  </label>
+                </span>
+              </p>
+              <p>
+              <span class="alignment">
+                <label for="customerNameInput" class="formItem">お名前</label>
+                <span class="essential">必須</span>
+              </span>
+              <input class="customerName" type="text" name="customerName" id="customerNameInput" placeholder="例:田中 太郎" required >
+              </p>           
+              <p>
+                <span class="alignment">
+                  <label for="furiganaInput" class="formItem">フリガナ</label>
+                  <span class="essential">必須</span>
+                </span>
+                <input class="furigana" type="text" name="furigana" id="furiganaInput" placeholder="例:タナカ タロウ" required>
+              </p>
+              <p>
+                <span class="alignment">
+                  <label for="phoneInput" class="formItem">電話番号</label>
+                  <span class="essential">必須</span>
+                </span>
+                <input class="phoneNumber" type="tel" name="phoneNumber" id="phoneInput" pattern="[0-9\-]+" 
+                inputmode="tel" placeholder="例:090-1234-5678" required>
+              </p>
+              <p class="postCodeAdress">
+                <span class="alignment">
+                  <label for="postCodeInput" class="formItem">住所</label>
+                  <span class="essential">必須</span>
+                </span>
+                <span class="postMark">〒</span>
+                <input class="postCode" type="text" name="postCode" inputmode="numeric" pattern="\d{3}-?\d{4}" 
+                id="postCodeInput" placeholder="例:123-4567" required>
+              </p>
+              <p>
+                <span class="alignment"></span>
+                <input class="address" type="text" name="address" placeholder="例:千葉県千葉市中央区市場町1番1号" required>
+              </p>
+              <p>
+                <span class="alignment">
+                  <label for="emailAddressInput" class="formItem">メールアドレス</label>
+                  <span class="essential">必須</span>
+                </span>
+                <input class="emailAddress" type="email" name="emailAddress" 
+                id="emailAddressInput" placeholder="例:your@example.com" required>
+              </p>
+              <p>
+                <span class="alignment">
+                  <label for="emailAddressCheckInput" class="formItem">メールアドレス(確認用)</label>
+                  <span class="essential">必須</span>
+                </span>
+                <input class="emailAddressCheck" type="email" name="emailAddressCheck" 
+                id="emailAddressCheckInput" placeholder="例:your@example.com" autocomplete="off" required>
+              </p>
+              <p class="inquiryAlign">
+                <span class="alignment">
+                  <label for="inquiryTextInput" class="formItem">お問い合わせ内容</label>
+                  <span class="essential">必須</span>
+                </span>
+                <textarea class="inquiryText" name="inquiryText" id="inquiryTextInput" placeholder="1,000文字まで" 
+                maxlength="1000" required></textarea>
+              </p>
+              <div class="submitWrap">
+                <input class="notoSerifJp" type="submit" value="入力内容を確認する">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+ <footer>
+        </div>
+                <div class="footerLine">
+                    <p class="footerFlag"><img src="images/daiti.jpg" alt=""></p>
+                    <div class="footerWrap">
+                        <nav class="footerNav">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="../PORTFOLIO_PORTFOLIO/index.html">Profile</a></li>
+                                <li><a href="../Work History/index.html">Work History</a></li>
+                                <li><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                        <p><a href="#topSec"><img src="images/sasa.jpg" alt=""></a></p>
+                        <div class="sns_footer">
+                            <ul>
+                                <li><a href="#"><img src="images/fbLogo.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/instaLogo.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/twittterLogo.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <a href="#top" class="back-to-top" aria-label="トップへ戻る">
+                  <img src="images/toTop.svg" alt="Topへ戻る"/>
+                   </a>
+                <p class="small"><small>Shigeta Yousuke @2025</small></p>
+            </footer>
+            <nav id="nav">
+            <div class="logo">
+                <a href="#topSec"><img src="images/sasa.jpg" alt=""></a>
+            </div>
+            <div class="batu" id ="batu">
+                <img src="images/batu.png" alt="">
+            </div>  
+            <ul>
+                <li class="menu">Menu</li>
+                <li class="libottom"><a href="#" class="liline">HOME</a></li>
+                <li class="libottom2"><a href="#" class="liline">Profile</a></li>
+                <li class="libottom2"><a href="#" class="liline">Work History</a></li>
+                <li><a href="#" class="liline">お問い合わせ</a></li>
+            </ul>
+        </nav>
+  <script src="scripts/script.js"></script>
+ </body>
+</html>
